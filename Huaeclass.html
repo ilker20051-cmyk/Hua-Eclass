@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Portal — Demo</title>
+<style>
+*{box-sizing:border-box} body{margin:0;background:#f4f6f9;color:#172033;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.header{background:#17365d;color:white;padding:18px 20px;display:flex;align-items:center;gap:14px}
+.logo{width:44px;height:44px;border-radius:50%;background:white;color:#17365d;display:grid;place-items:center;font-weight:800;font-size:13px}
+.header h1{font-size:18px;margin:0} .header small{opacity:.8}
+.wrap{max-width:900px;margin:22px auto;padding:0 14px}
+.demo{background:#fff3cd;border:1px solid #ffe69c;color:#664d03;padding:10px 13px;border-radius:9px;font-size:13px;margin-bottom:14px}
+.card{background:white;border-radius:14px;padding:20px;box-shadow:0 3px 14px #0000000c;margin-bottom:16px}
+.profile{display:flex;justify-content:space-between;gap:15px;align-items:center}
+h2{margin:0 0 4px;font-size:20px} .muted{color:#6b7280;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stat{background:#f6f8fb;border-radius:10px;padding:14px;text-align:center} .num{font-size:25px;font-weight:750} .label{font-size:12px;color:#6b7280}
+.progress{height:10px;background:#e8edf3;border-radius:99px;overflow:hidden;margin-top:12px} .bar{height:100%;width:73.53%;background:#1f7a4d}
+.tablewrap{overflow:auto} table{width:100%;border-collapse:collapse;min-width:620px} th,td{padding:12px 10px;border-bottom:1px solid #edf0f3;text-align:left;font-size:14px} th{font-size:12px;color:#667085;background:#fafbfc}
+.badge{padding:5px 9px;border-radius:999px;font-size:12px;font-weight:650} .pass{background:#e7f6ed;color:#17643d} .fail{background:#f1f3f5;color:#667085}
+.footer{text-align:center;color:#8a93a1;font-size:12px;padding:10px 0 30px}
+@media(max-width:600px){.profile{align-items:flex-start;flex-direction:column} .stats{grid-template-columns:1fr 1fr} .stats .stat:last-child{grid-column:1/-1} .card{padding:15px}}
+</style>
+</head>
+<body>
+<div class="header"><div class="logo">UNI</div><div><h1>Student Portal</h1><small>Academic Progress</small></div></div>
+<div class="wrap">
+
+<div class="card">
+<div class="profile"><div><h2>Πρόοδος Σπουδών</h2><div class="muted">Πληροφορική και Τηλεματική</div></div><div class="muted">Ακαδημαϊκό έτος 2025–2026</div></div>
+<div class="stats">
+<div class="stat"><div class="num">25</div><div class="label">Επιτυχή μαθήματα</div></div>
+<div class="stat"><div class="num">34</div><div class="label">Σύνολο μαθημάτων</div></div>
+<div class="stat"><div class="num">73.5%</div><div class="label">Πρόοδος</div></div>
+</div>
+<div class="progress"><div class="bar"></div></div>
+</div>
+<div class="card"><h2 style="font-size:17px">Αναλυτική κατάσταση</h2><div class="muted" style="margin-bottom:14px">Ενδεικτική εμφάνιση βαθμολογίας</div>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Μάθημα</th><th>Κατάσταση</th><th>Βαθμός</th></tr></thead><tbody><tr><td>1</td><td>Πιθανότητες</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>2</td><td>Μοντελοποίηση και Προσομοίωση Συστημάτων</td><td><span class="badge pass">Επιτυχία</span></td><td>8</td></tr><tr><td>3</td><td>Κρυπτογραφία</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>4</td><td>Λειτουργικά Συστήματα</td><td><span class="badge pass">Επιτυχία</span></td><td>9</td></tr><tr><td>5</td><td>Οικονομικά της Ψηφιακής Τεχνολογίας</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>6</td><td>Τεχνολογίες Γραφημάτων και Εφαρμογές</td><td><span class="badge pass">Επιτυχία</span></td><td>6</td></tr><tr><td>7</td><td>Υπολογιστικά Μαθηματικά Ι</td><td><span class="badge pass">Επιτυχία</span></td><td>5</td></tr><tr><td>8</td><td>Τηλεπικοινωνιακά Συστήματα</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>9</td><td>Δομές Δεδομένων</td><td><span class="badge pass">Επιτυχία</span></td><td>8</td></tr><tr><td>10</td><td>Ανάπτυξη Κινητών Εφαρμογών</td><td><span class="badge pass">Επιτυχία</span></td><td>5</td></tr><tr><td>11</td><td>Αξιολόγηση Συστημάτων και Διεπαφών</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>12</td><td>Αντικειμενοστρεφής Προγραμματισμός Ι</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>13</td><td>Πληροφοριακά Συστήματα</td><td><span class="badge pass">Επιτυχία</span></td><td>8</td></tr><tr><td>14</td><td>Διαχείριση Υπολογιστικού Νέφους</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>15</td><td>Δίκτυα Υπολογιστών</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>16</td><td>Εφαρμογές Ηλεκτρονικής και Διαδίκτυο των Πραγμάτων</td><td><span class="badge pass">Επιτυχία</span></td><td>9</td></tr><tr><td>17</td><td>Συστήματα Κινητών Επικοινωνιών</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>18</td><td>Εισαγωγή στην Πληροφορική και Τηλεματική</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>19</td><td>Ασφάλεια Συστημάτων</td><td><span class="badge pass">Επιτυχία</span></td><td>6</td></tr><tr><td>20</td><td>Βάσεις Δεδομένων</td><td><span class="badge pass">Επιτυχία</span></td><td>6</td></tr><tr><td>21</td><td>Τεχνολογίες Διαδικτύου</td><td><span class="badge pass">Επιτυχία</span></td><td>5</td></tr><tr><td>22</td><td>Διακριτά Μαθηματικά</td><td><span class="badge pass">Επιτυχία</span></td><td>6</td></tr><tr><td>23</td><td>Σχεδίαση Βάσεων Δεδομένων και Κατανεμημένες Βάσεις Δεδομένων</td><td><span class="badge pass">Επιτυχία</span></td><td>8</td></tr><tr><td>24</td><td>Σήματα και Συστήματα</td><td><span class="badge pass">Επιτυχία</span></td><td>8</td></tr><tr><td>25</td><td>Μηχανική Μάθηση και Εφαρμογές</td><td><span class="badge pass">Επιτυχία</span></td><td>8</td></tr><tr><td>26</td><td>Προγραμματισμός ΙΙ</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>27</td><td>Αρχές Γλωσσών Προγραμματισμού</td><td><span class="badge pass">Επιτυχία</span></td><td>5</td></tr><tr><td>28</td><td>Τεχνολογίες Εφαρμογών Ιστού</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>29</td><td>Υπολογιστικά Μαθηματικά ΙΙ</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>30</td><td>Τεχνητή Νοημοσύνη</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr><tr><td>31</td><td>Ανάλυση Συστημάτων και Τεχνολογία Λογισμικού</td><td><span class="badge pass">Επιτυχία</span></td><td>7</td></tr><tr><td>32</td><td>Αρχιτεκτονική Υπολογιστών</td><td><span class="badge pass">Επιτυχία</span></td><td>5</td></tr><tr><td>33</td><td>Μεθοδολογία της Επιστημονικής Έρευνας</td><td><span class="badge pass">Επιτυχία</span></td><td>9</td></tr><tr><td>34</td><td>Αλγόριθμοι και Πολυπλοκότητα</td><td><span class="badge fail">Εκκρεμεί</span></td><td>—</td></tr></tbody></table></div>
+</div>
+<div class="footer">Student Portal</div>
+</div>
+</body></html>
